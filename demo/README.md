@@ -19,6 +19,12 @@ To use these demos, you need a GitHub personal access token with the `models:rea
 4. Under **"Select scopes"**, check `models:read`
 5. Click **"Generate token"** and copy the token (you won't be able to see it again)
 
+### Video Walkthrough
+
+[![How to Get a GitHub Token](../Images/demo_token_video.mov)](Images/demo_token_video.mov)
+
+Watch this short video for a step-by-step guide on generating your GitHub personal access token.
+
 **Keep your token secure and do not share it publicly.**
 
 ---
