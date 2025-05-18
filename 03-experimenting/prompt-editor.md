@@ -1,6 +1,6 @@
 # Prompt Editor Guide
 
-![Model Comparison Screenshot](../Images/marketplace%20model%20testing.png)
+![Model Comparison Screenshot](../Images/Prompteditor.png)
 
 ## Purpose
 - Dedicated space for prompt crafting
