@@ -1,5 +1,7 @@
 # Prompt Editor Guide
 
+![Model Comparison Screenshot](../Images/marketplace%20model%20testing.png)
+
 ## Purpose
 - Dedicated space for prompt crafting
 - Isolated from chat history

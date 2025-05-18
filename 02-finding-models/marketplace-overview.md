@@ -1,6 +1,6 @@
 # GitHub Models Marketplace Overview
 
-![GitHub Models Marketplace Screenshot](./Images/github-marketplace.png)
+![GitHub Models Marketplace Screenshot](../Images/github-marketplace.png)
 
 The GitHub Models Marketplace is your starting point for discovering AI models.
 
