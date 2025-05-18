@@ -95,3 +95,8 @@ The GitHub Models Marketplace is constantly evolving, with new models and provid
 - [Get Free Azure Credits](https://shorturl.at/Tyr7O)
 - (More resources coming soon — you can update this section with additional links and materials.)
 
+
+## Copyright
+
+- All course content and materials are © Nisal Gunawardhana. All rights reserved.
+- Redistribution or use of course materials without permission is prohibited.
