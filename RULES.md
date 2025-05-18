@@ -36,3 +36,12 @@ This repository is protected to ensure the integrity and quality of the course c
 
 ## Maintainer Contact
 For questions or special requests, contact the repository owner via GitHub or the contact info in the main README.
+
+---
+
+
+
+## Copyright
+
+- All course content and materials are © Nisal Gunawardhana. All rights reserved.
+- Redistribution or use of course materials without permission is prohibited.
