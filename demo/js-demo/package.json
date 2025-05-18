@@ -1,0 +1,22 @@
+{
+  "name": "js-demo",
+  "version": "1.0.0",
+  "description": "This folder contains JavaScript (Node.js) demo scripts for using GitHub Models. Each demo includes step-by-step instructions in the comments.",
+  "main": "demo-01-basic-chat.js",
+  "scripts": {
+    "demo-01": "node demo-01-basic-chat.js",
+    "demo-02": "node demo-02-code-analysis.js",
+    "demo-03": "node demo-03-function-calling.js",
+    "demo-04": "node demo-04-error-correction.js",
+    "demo-05": "node demo-05-continuous-chatbot.js",
+    "demo-06": "node demo-06-code-review.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest"
+  }
+}

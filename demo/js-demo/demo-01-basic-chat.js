@@ -1,29 +1,42 @@
-// Demo 01: Basic Chat Completion with GitHub Models (Node.js)
-// This script sends a simple chat prompt to a model and prints the response.
+// Instructions:
+// 1. Download this demo file.
+// 2. Open your terminal and navigate to the demo file directory.
+// 3. Run `npm install` to install dependencies.
+// 4. To run this demo, use the command: `npm run demo-01`
 
-// Step-by-step guide to create and run this Node.js project:
-// 1. Initialize a new Node.js project:
-//    Open your terminal and run:
-//      npm init -y
-// 2. Install the required SDK:
-//      npm install azure-ai-inference
-// 3. Set your GitHub token in your environment (replace YOUR_TOKEN_HERE):
-//      export GITHUB_TOKEN='YOUR_TOKEN_HERE'
-// 4. Save this script as demo-01-basic-chat.js
-// 5. Run the script:
-//      node demo-01-basic-chat.js
+const ModelClient = require("@azure-rest/ai-inference").default;
+const { isUnexpected } = require("@azure-rest/ai-inference");
+const { AzureKeyCredential } = require("@azure/core-auth");
 
-const { ChatCompletions } = require('azure-ai-inference');
+const token = process.env["GITHUB_TOKEN"];
+const endpoint = "https://models.github.ai/inference";
+const model = "openai/gpt-4.1";
 
-const client = new ChatCompletions({
-  model: 'openai/gpt-4',
-  credential: process.env.GITHUB_TOKEN
-});
+async function main() {
+  const client = ModelClient(
+    endpoint,
+    new AzureKeyCredential(token),
+  );
 
-(async () => {
-  const response = await client.create({
-    messages: [{ role: 'user', content: 'Hello, GitHub Models!' }],
-    temperature: 0.7
+  const response = await client.path("/chat/completions").post({
+    body: {
+      messages: [
+        { role: "system", content: "You are a helpful assistant." },
+        { role: "user", content: "What is the capital of France?" }
+      ],
+      temperature: 1.0,
+      top_p: 1.0,
+      model: model
+    }
   });
-  console.log('Model reply:', response.choices[0].message.content);
-})();
+
+  if (isUnexpected(response)) {
+    throw response.body.error;
+  }
+
+  console.log(response.body.choices[0].message.content);
+}
+
+main().catch((err) => {
+  console.error("The sample encountered an error:", err);
+});

@@ -1,20 +1,27 @@
-# Demo 01: Basic Chat Completion with GitHub Models (Python)
-# This script sends a simple chat prompt to a model and prints the response.
-# Instructions:
-# 1. Set your GitHub token in your environment: export GITHUB_TOKEN='your_token_here'
-# 2. Install the SDK: pip install azure-ai-inference
-# 3. Run: python demo-01-basic-chat.py
 
 import os
-from azure.ai.inference import ChatCompletions
+from azure.ai.inference import ChatCompletionsClient
+from azure.ai.inference.models import SystemMessage, UserMessage
+from azure.core.credentials import AzureKeyCredential
 
-client = ChatCompletions(
-    model="openai/gpt-4",
-    credential=os.environ["GITHUB_TOKEN"]
+endpoint = "https://models.github.ai/inference"
+model = "openai/gpt-4.1"
+token = os.environ["GITHUB_TOKEN"]
+
+client = ChatCompletionsClient(
+    endpoint=endpoint,
+    credential=AzureKeyCredential(token),
 )
 
-response = client.create(
-    messages=[{"role": "user", "content": "Hello, GitHub Models!"}],
-    temperature=0.7
+response = client.complete(
+    messages=[
+        SystemMessage("You are a helpful assistant."),
+        UserMessage("What is the capital of France?"),
+    ],
+    temperature=1.0,
+    top_p=1.0,
+    model=model
 )
-print("Model reply:", response.choices[0].message.content)
+
+print(response.choices[0].message.content)
+
