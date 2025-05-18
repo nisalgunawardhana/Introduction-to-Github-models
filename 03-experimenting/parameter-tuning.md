@@ -1,5 +1,7 @@
 # Parameter Tuning Guide
 
+![Parameter Tuning Overview](Images/parameters.png)
+
 > **Note:** Some parameters may only be supported by specific providers or models. Always check the model card in the Marketplace for details.
 
 ## Key Parameters

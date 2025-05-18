@@ -1,5 +1,7 @@
 # Model Playground Guide
 
+![Model Playground Screenshot](Images/playground.png)
+
 ## Interface Overview
 - **Chat Panel**: Main interaction area
 - **Parameters Tab**: Model configuration

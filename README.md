@@ -2,6 +2,9 @@
 
 This repository contains a comprehensive course on using GitHub Models for AI experimentation and development.
 
+![GitHub Models Learning Course Banner](images/intro.png)
+
+
 ## Course Outline
 
 1. **Introduction to GitHub Models**
