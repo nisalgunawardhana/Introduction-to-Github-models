@@ -1,6 +1,6 @@
 # Comparing AI Models
 
-![Model Comparison Screenshot](Images/compare.png)
+![Model Comparison Screenshot](./Images/compare.png)
 
 ## Playground Comparison Tool
 1. Open a model in playground

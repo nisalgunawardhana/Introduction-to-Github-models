@@ -1,6 +1,6 @@
 # Model Playground Guide
 
-![Model Playground Screenshot](Images/playground.png)
+![Model Playground Screenshot](./Images/playground.png)
 
 ## Interface Overview
 - **Chat Panel**: Main interaction area
