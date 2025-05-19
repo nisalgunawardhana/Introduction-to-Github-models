@@ -34,7 +34,7 @@ This folder contains the core tasks you must complete to earn your course certif
 
 1. Complete **all three core tasks above** in the `task/` folder using Node.js.
 2. Upload your solutions to your GitHub repository.
-3. Submit your repository link using this form: [Submit Your Course Solutions](https://example.com/submit-form)
+3. Submit your repository link using this form: [Submit Your Course Solutions](https://forms.cloud.microsoft/r/aMLB1aQgG0)
 4. Once reviewed, you will receive your course certificate!
 
 > **Note:** Only these three core tasks are required for certification. For extra learning and skill improvement, you are encouraged to also complete the advanced [Vision, Audio, and Open-Source Tasks](vision-audio-open-source-tasks.md), but these are optional and not required for the certificate.
