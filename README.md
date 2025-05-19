@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive course on using GitHub Models for AI experimentation and development.
 
+[![Follow me on GitHub](https://img.shields.io/github/followers/nisalgunawardhana?label=Follow%20me%20on%20GitHub&style=social)](https://github.com/nisalgunawardhana)
+
 ![GitHub Models Learning Course Banner](./Images/intro.png)
 
 
